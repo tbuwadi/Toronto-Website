@@ -1,0 +1,326 @@
+* {
+    outline:none
+}
+
+/****** Body and Wrapper ******/
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Open Sans', sans-serif;
+}
+.wrapper {
+    width: 100%;
+    margin:auto;
+    background-color: black;
+}
+
+/****** Banner ******/
+.banner {
+    text-align: center;
+    
+}
+.banner img {
+    width:100%;
+}
+
+/**** Create Gradient Animation ******/
+@keyframes gradientAnimation{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/****** Navigation Menu ******/
+.topSection{
+    margin-top: -7px;
+    font-family: sans-serif;
+    display: flex;
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+
+.topSection ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: linear-gradient(270deg, #F09819, #EDDE5D);
+    background-size: 200% 200%;
+    animation: gradientAnimation 7s ease infinite;
+}
+
+.topSection li {
+    float: right;
+}
+  
+.topSection li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    border: transparent 5px solid;
+}
+  
+.topSection li a:hover {
+    background-color: #111;
+    color: white;
+    border: white 5px solid;
+    transition: border 0.75s;
+}
+
+/****** Back to Top Button ******/
+.topSection #backToTop{
+    top: 80%;
+    position: fixed;
+    width: 80px;
+    color: black;
+    background-color: #f9c939;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: arial;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: width 2s;
+}
+
+.topSection #backToTop a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.topSection #backToTop:hover{
+    width: 120px;
+    transition: width 2s;
+}
+.topSection #backToTop a:hover{
+    text-decoration: none;
+}
+
+
+  /****** About Section ******/
+.aboutSection .i1{
+    margin: 0 auto;
+    width: 100%;
+}
+.aboutSection .i3{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    vertical-align: middle;
+}
+.aboutSection p{
+    font-size: 18px;
+    color: #f9f9f9;
+    padding: 20px;
+}
+.aboutSection h1{
+    font-family: 'Permanent Marker', sans-serif ;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.aboutSection li {
+    color: #f9f9f9;
+    font-size: 18px;
+}
+
+.aboutSection img{
+    border-radius: 50%;
+    width: 100%;
+    
+}
+
+.aboutSection .image{
+    margin-top: 30px;
+    border-radius: 25px;
+    background: linear-gradient(270deg, #304352, #d7d2cc);
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+/****** Cusine Section *******/
+
+.cuisineSection .i1{
+    margin: 0 auto;
+    width: 100%;
+}
+.cuisineSection{
+    margin-top: 60px;
+    background-color: rgb(20, 20, 20);
+}
+.cuisineSection .i4{
+    padding: 20px;
+    vertical-align: middle;
+}
+.cuisineSection p{
+    font-size: 18px;
+    color: #f9f9f9;
+    padding-bottom: 40px;
+}
+.cuisineSection h1{
+    font-family: 'Permanent Marker', sans-serif ;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 35px;
+    
+}
+
+.cuisineSection img{
+    padding-top: 40px;
+    width: 125%;
+    border-radius: 25px;
+}
+
+.cuisineSection h2{
+    color: #f9c939;
+    text-align: center;
+}
+
+.cuisineSection p{
+    font-size: 16px;
+    color: #f9f9f9;
+}
+
+/****** Celebrities Section *******/
+
+.celebritiesSection .i1{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.celebritiesSection .i2{
+    vertical-align: middle;
+}
+
+.celebritiesSection h1{
+    font-family: 'Permanent Marker', sans-serif ;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 20px;
+    
+}
+
+.celebritiesSection h2{
+    color: #f9c939;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 25px;
+}
+
+.celebritiesSection h3{
+    font-size: 20px;
+    color: #f9f9f9;
+    text-align: center;
+    vertical-align: middle;
+    padding-bottom: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.celebritiesSection .person {
+    display: block;
+    width:auto;
+    height: 450px;
+    margin: auto;
+}
+
+.celebritiesSection #vinyl {
+    display: block;
+    margin: auto;
+    height: 334px;
+    width: auto;
+}
+
+.celebritiesSection #dvdcover {
+    display: block;
+    margin: auto;
+}
+
+
+.celebritiesSection .celeb{
+    background-color: rgb(20, 20, 20);
+    margin: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 25px;
+}
+
+/****** References Section *******/
+
+.referencesSection{
+    padding-bottom: 100px;
+}
+.referencesSection .i1{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.referencesSection h1{
+    font-family: 'Permanent Marker', sans-serif ;
+    margin: 0;
+    padding: 0;
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.referencesSection .i3 h3{
+    text-align: center;
+    color: #f9c939;
+    font-size: 20px;
+    
+}
+.referencesSection h2{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-size: 20px;
+}
+
+
+.referencesSection p{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.referencesSection ul{
+    list-style-position: inside;
+    padding-left: 30%;
+
+}
+.referencesSection li a{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.referencesSection li a:hover{
+    color: #f9c939;
+}
+
